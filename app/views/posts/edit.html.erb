@@ -1,0 +1,9 @@
+<div class="contents_box">
+  <%= form_tag("/posts/#{@post.id}", method: :patch ) do %>
+    <input placeholder="タイトル" class="form-title" type="text" name="post[title]" id="post_title" />
+    <textarea placeholder="本文" class="form-text" name="post[text]" id="post_text" cols="30" rows="10">
+</textarea>
+    <input type="submit" name="commit" value="更新する" class="form-send sent-btn" data-disable-with="更新する" />
+  <% end %>
+
+</div>

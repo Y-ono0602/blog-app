@@ -1,8 +1,12 @@
   <div class="contents" >
     <% @posts.each do |post| %>
       <div class="content_post">
-        <p class="title"><%= post.text.length %></p>
-        <%= link_to 'more', "/posts/#{post.id}", method: :get %>
+            <div class="title"><%= post.text.length %></div>
+
+            <div class="index-title">
+            <%= post.title %>
+            <%= link_to '記事をみる', "/posts/#{post.id}", method: :get, class: "link-text" %>
+            </div>
       </div>
     <% end %>
   </div>

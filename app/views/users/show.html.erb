@@ -1,0 +1,10 @@
+  <div >
+    <p class="post_index"><%= @nickname %>さんの投稿一覧</p>
+    <% @posts.each do |post| %>
+      <div class="content_post">
+        <div><%= post.title %></div>
+        <div><%= post.text %></div>
+      </div>
+    <% end %>
+
+  </div>

@@ -27,6 +27,7 @@
       <div class="btn-wrapper">
       <% if user_signed_in? %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'user-btn' %>
+        <a href="/users/<%= current_user.id %>" class="user-btn">マイページ</a>
         <a href="/posts/new" class="user-btn">投稿する</a>
       <% else %>
         <%= link_to "ログイン", new_user_session_path, class: 'user-btn' %>

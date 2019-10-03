@@ -1,7 +1,8 @@
   <div class="contents" >
     <% @posts.each do |post| %>
       <div class="content_post">
-        <p class="title"><%= post.title %></p>
+        <p class="title"><%= post.text.length %></p>
+        <%= link_to 'more', "/posts/#{post.id}", method: :get %>
       </div>
     <% end %>
   </div>

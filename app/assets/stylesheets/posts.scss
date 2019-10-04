@@ -1,83 +1,22 @@
-* {
-  box-sizing: border-box;
-  font-family: fot-udkakugo-large-pr6n,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #707070;
-}
-
-a:link { color: #B5B5B5; }
-a:visited { color: #B5B5B5; }
-a:hover { color: #B5B5B5; }
-a:active { color: #B5B5B5; }
-.header {
-  background-color: black;
-  height: 100px;
-  line-height: 100px;
-  color: #B5B5B5;
-  width: 100%;
-}
-.header_wrapper {
-  height: 100%;
-  display: block;
-}
-.logo-wrapper {
-  float: left;
-}
-.btn-wrapper {
-  float: right;
-  display: block;
-  padding-right: 30px;
-}
-
-.user-btn {
-  display: inline-block;
-  float: left;
-  width: 120px;
-  height: 35px;
-  text-decoration: none;
-  font-size: 14pt;
-  color: #B5B5B5;
-  // border-radius: 40px;
-  // border: solid 1px #B5B5B5;
-}
-.logo {
-  padding: 0 40px;
-  text-decoration: none;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40pt;
-  color: #B5B5B5;
-}
-.head-line {
-  font-size: 15pt;
-  line-height: 100px;
-  vertical-align: top;
-  color: #B5B5B5;
-}
-
 .content_post {
   margin :50px auto 0;
   width: 620px;
   border-radius: 60px;
-  background-color: white;
-  border: solid 10px #707070;
+  background-color: #85FF36;
   position: relative;
 }
 .content_post:before {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 58%;
   left: 100%;
-  border: 20px solid transparent;
-  border-left: 30px solid #707070;
+  border: 18px solid transparent;
+  border-left: 40px solid #85FF36;
 }
 .contents_box {
   width: 750px;
-  height: 420px;
   border-radius: 10px;
-  background-color: #707070;
+  background-color: #85FF36;
   margin: 70px auto;
   padding: 25px;
   position: relative;
@@ -88,9 +27,33 @@ a:active { color: #B5B5B5; }
   top: 99%;
   left: 50%;
   margin-left: -15px;
-  border: 20px solid transparent;
-  border-top: 30px solid #707070;
+  border: 17px solid transparent;
+  border-top: 30px solid #85FF36;
 }
+// top画面一覧
+.title {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 135pt;
+  line-height: 160px;
+}
+.index-title {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.link-text {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.link-text a:link { color:black; }
+.link-text a:visited { color: black; }
+.link-text a:hover { color: #B5B5B5; }
+.link-text a:active { color: black; }
+
+// 投稿画面
 .form-title,.form-text,.form-send {
   border-style: none;
   background-color: white;
@@ -109,31 +72,12 @@ a:active { color: #B5B5B5; }
   height: 230px;
 }
 .form-send {
-  background-color: black;
+  background-color: #223253;
   height: 50px;
   text-align: center;
   color: white;
 }
 
-.title {
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 135pt;
-}
-.index-title {
-  margin: 0 auto;
-  font-family: fot-udkakugo-large-pr6n,sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-}
-.link-text {
-  text-decoration: none;
-}
 .success-box {
   display: block;
   width: 200px;

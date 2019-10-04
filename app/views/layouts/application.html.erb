@@ -9,12 +9,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://use.typekit.net/gsq5bqi.css">
-    <%# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> %>
-    <%# <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> %>
-    <%# <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script> %>
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'rdx2txy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
           
   </head>
 
@@ -23,7 +27,7 @@
     <div class="header-wrapper">
       <div class="logo-wrapper">
       <a href="/" class="logo">No.BLOG</a>
-      <a class="head-line">文字数でみるブログ</a></div>
+      <a class="head-line">本文を文字数でみるブログ</a></div>
       <div class="btn-wrapper">
       <% if user_signed_in? %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'user-btn' %>
@@ -36,7 +40,6 @@
       </div>
     </div>
   </nav>
-
     <%= yield %>
   </body>
 </html>
